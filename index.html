@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Kostenich</title>
+    <link rel="shortcut icon" href="assets/svg/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">About me</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#skills" class="menu__link">Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects" class="menu__link">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#code" class="menu__link">Code</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#education" class="menu__link">Education</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#languages" class="menu__link">Languages</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="assets/svg/email.svg" alt="discord">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="assets/svg/discord.svg" alt="discord">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img src="assets/svg/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__wrap">
+                        <h1 class="about__title">Hello,
+                            <br>
+                            I’m Elena </h1>
+                        <h3 class="about__subtitle">Junior Front-End Developer</h3>
+                        <p class="about__descr">
+                            Having gained many years of experience in the field of banking, there was a great desire to
+                            radically change the direction of professional activity. I became interested in programming
+                            in general. Plunging into this sphere more deeply, I felt
+                            great interest in Front-End development. At the current stage, I am actively studying: JS,
+                            HTML, CSS, etc.
+                        </p>
+                        <button class="about__button button">write me</button>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/myphoto.jpg" alt="My Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="skills__title title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS (Bootstrap, SASS/SCSS, BEM)</li>
+                    <li class="skills__item">JavaScript (Basic)</li>
+                    <li class="skills__item">Git/GitHub</li>
+                    <li class="skills__item">VS Code</li>
+                    <li class="skills__item">Figma, Zeplin, Photoshop</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="projects__title title">Projects</h2>
+                <div class="projects__list">
+                    <div class="projects__item">
+                        <div class="projects__img">
+                            <img src="assets/img/odigo.png" alt="project">
+                        </div>
+                        <div class="projects__descr">
+                            <p>
+                                Travelin landing page
+                            </p>
+                            <p>
+                                Made with BEM and CSS Flexbox layout.
+                            </p>
+                            <a class="projects__button button"
+                                href="https://elenakostenich.github.io/odigo_project/">see project</a>
+                        </div>
+                    </div>
+                    <div class="projects__item projects__item-revers">
+                        <div class="projects__img">
+                            <img src="assets/img/uber.png" alt="project">
+                        </div>
+                        <div class="projects__descr">
+                            <p>
+                                Uber landing page
+                            </p>
+                            <p>
+                                Made with BEM and CSS Flexbox layout.
+                            </p>
+                            <a class="projects__button button"
+                                href="https://elenakostenich.github.io/Uber_training_project/">see project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="code" id="code">
+            <div class="container">
+                <h2 class="code__title title">Code examples</h2>
+                <pre class="code__exemp">
+                    <code>
+                        window.addEventListener('DOMContentLoaded', () => {
+                            const menu = document.querySelector('.menu'),
+                            menuItem = document.querySelectorAll('.menu_item'),
+                            hamburger = document.querySelector('.hamburger');
+                        
+                            hamburger.addEventListener('click', () => {
+                                hamburger.classList.toggle('hamburger_active');
+                                menu.classList.toggle('menu_active');
+                            });
+                        
+                            menuItem.forEach(item => {
+                                item.addEventListener('click', () => {
+                                    hamburger.classList.toggle('hamburger_active');
+                                    menu.classList.toggle('menu_active');
+                                })
+                            })
+                        })
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="container">
+                <h2 class="education__title title">Education</h2>
+                <div class="education__wrap">
+                    <div class="education__university">
+                        <p class="education__subtitle">University:</p>
+                        <ul class="education__list">
+                            <li class="education__item">
+                                Financial University under the Government of the Russian
+                                Federation
+                            </li>
+                            <li class="education__item">
+                                Moscow State Transport University
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education__course">
+                        <p class="education__subtitle">Courses:</p>
+                        <ul class="education__list">
+                            <li class="education__item">
+                                <a class="education__link"
+                                    href="https://youtube.com/playlist?list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5">
+                                    CS50 video course
+                                </a>
+                            </li>
+                            <li class="education__item">
+                                <a class="education__link" href="https://www.youtube.com/c/YauhenKavalchuk/featured">
+                                    Video courses on YouTube channels
+                                </a>
+                            </li>
+                            <li class="education__item">
+                                <a class="education__link" href="https://learn.javascript.ru/">
+                                    JavaScript
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="languages" id="languages">
+            <div class="container">
+                <h2 class="education__title title">Languages</h2>
+                <div class="languages__wrap">
+                    <p class="languages__item">Russian - native </p>
+                    <p class="languages__item">English - A2</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="contact__title title">Contact</h2>
+                <div class="contact__wrap">
+                    <div class="contact__items">
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <img src="assets/svg/email.svg" alt="email">
+                                <a href="mailto:j45k56@gmail.com">Email: j45k56@gmail.com</a>
+                            </li>
+                            <li class="contact__item">
+                                <img src="assets/svg/discord.svg" alt="Discord">
+                                <a href="#">Discord: Elena (@ElenaKostenich)</a>
+                            </li>
+                            <li class="contact__item">
+                                <img src="assets/svg/telegram.svg" alt="telegram">
+                                <a href="#">Telegram: +7-951-706-08-75</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <a class="footer__github" href="https://github.com/ElenaKostenich/">
+                    <img src="assets/svg/github-logo.svg" alt="github">
+                    GitHub
+                </a>
+                <p class="year">2021</p>
+                <a class="footer__rs" href="https://rs.school/js/">
+                    <img src="assets/svg/rs_school.svg" alt="rs school">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
